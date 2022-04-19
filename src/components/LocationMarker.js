@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import { Icon } from '@iconify/react';
+import locationIcon from '@iconify/icons-mdi/fire-alert';
 
-class LocationMarker extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
+const LocationMarker = ({ lat, lng, onClick }) => {
+  return (
+    <div className="location-marker" onClick={onClick}>
+      <Icon icon={locationIcon} className="location-icon" />
+    </div>
+  )
 }
-
-LocationMarker.propTypes = {};
 
 export default LocationMarker;
