@@ -1,17 +1,62 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
+// Map
 .map {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
 
+// Header
+.header {
+  padding: 10px;
+  background-color: firebrick;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  &__title {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+// Location Marker
 .location-icon {
   font-size: 2rem;
   color: red;
+}
+
+// Location info box
+.location-info {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+
+  &__group {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__list {
+    padding: 5px 0;
+  }
 }
 
 // Loader component
